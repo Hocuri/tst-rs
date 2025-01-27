@@ -9,6 +9,8 @@ use anyhow::format_err;
 use anyhow::Context as _;
 use anyhow::Result;
 
+// Create flamegraph with CARGO_PROFILE_RELEASE_STRIP=false CARGO_PROFILE_RELEASE_DEBUG=true cargo flamegraph -o flamegraph.svg --image-width 5000
+
 pub fn main() -> Result<()> {
     let start = Instant::now();
     let fname = std::path::Path::new("/home/user/Downloads/huge.xdc");
