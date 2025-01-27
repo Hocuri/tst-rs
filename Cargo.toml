@@ -1,0 +1,22 @@
+[profile.dev]
+panic='abort'
+
+[profile.release]
+lto = true
+panic = 'abort'
+codegen-units = 1
+strip = true
+
+[package]
+name = "tst-rs"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+anyhow = "1.0.95"
+zip = "2.2.2"
+
+
+[dev-dependencies]
+
+[features]
